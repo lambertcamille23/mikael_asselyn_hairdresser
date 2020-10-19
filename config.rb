@@ -19,6 +19,11 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# routes
+page "/coupes.html"
+page "/couleurs-et-soins.html"
+page "/contact.html"
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
