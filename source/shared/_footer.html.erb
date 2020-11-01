@@ -11,13 +11,13 @@
       <div class="col-md mb-4">
         <h4 class="h5">Réseaux sociaux</h4>
         <p class="mb-1 d-flex align-items-center">
-          <% link_to data.links.facebook, target: "_blank", class: "link-uncolored link-undecored" do %>
-            <%= image_tag "social-icons/facebook.svg", alt: "Mikael Asselyn on facebook", width: "16", class: "mr-2" %> Facebook
+          <% link_to data.links.facebook, target: "_blank", class: "link-uncolored" do %>
+            <%= image_tag "social-icons/facebook.svg", alt: "Mikael Asselyn on facebook", width: "16", class: "mr-2" %>Facebook
           <% end %>
         </p>
         <p class="mb-1 d-flex align-items-center">
-          <% link_to data.links.instagram, target: "_blank", class: "link-uncolored link-undecored" do %>
-            <%= image_tag "social-icons/instagram.svg", alt: "Mikael Asselyn on instagram", width: "16", class: "mr-2" %> Instagram
+          <% link_to data.links.instagram, target: "_blank", class: "link-uncolored" do %>
+            <%= image_tag "social-icons/instagram.svg", alt: "Mikael Asselyn on instagram", width: "16", class: "mr-2" %>Instagram
           <% end %>
         </p>
       </div>
@@ -29,7 +29,7 @@
         </p>
         <p class="mb-1 d-flex align-items-center">
           <%= image_tag "icons/phone.svg", alt: "Mikael Asselyn address in paris", width: "16", class: "mr-2" %>
-          <%= data.contact.phone %>
+          <%= link_to data.contact.phone, "tel:#{data.contact.phone}", class: "link-uncolored" %>
         </p>
       </div>
     </div>

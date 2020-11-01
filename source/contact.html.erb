@@ -3,13 +3,55 @@ title: Mikaël Asselyn - Contact
 page_id: :contact
 ---
 
-<div class="container">
+<div class="container mb-5">
   <div class="row">
     <div class="col">
-      <p class="text-center">
-        <%#= image_tag "salon.png", alt: "alttext", class: 'w-100' %>
-      </p>
-      <h1>Contact</h1>
+      <h1 class="mb-4">Contact</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md font-weight-light">
+      <h4 class="h5 mb-3">Adresse</h4>
+      <p class="mb-1"><%= data.contact.name %></p>
+      <p class="mb-4"><%= data.contact.address %></p>
+      <h4 class="h5 mb-3">Téléphone & email</h4>
+      <p class="mb-1"><%= link_to data.contact.phone, "tel:#{data.contact.phone}", class: "link-uncolored" %></p>
+      <p class="mb-4"><%= link_to data.contact.email, "mailto:#{data.contact.email}", class: "link-uncolored" %></p>
+    </div>
+    <div class="col-md font-weight-light">
+      <h4 class="h5 mb-3">Horaires</h4>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>Lundi</td>
+            <td>12:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td>09:30 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>09:30 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>09:30 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>09:30 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>09:30 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td>Fermé</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
