@@ -1,42 +1,46 @@
 <div id="footer">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <div class="footer-frame">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="contact-section hidden-xs hidden-sm">
-                <div class="contact-section-info">
-                  <h3>MILLIMÈTRE</h3>
-                  <h4>Paris</h4>
-                  <h4>XX.XX.XX.XX.XX</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-              <div class="logo-footer">
-                <%= image_tag 'logo.jpg' %>
-                <p>Spécialiste de petites choses</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-3">
-              <div class="copyright-credits">
-                <h4><strong>CRÉDITS PHOTO</strong></h4>
-                <p>Maud Lazzerini</p>
-                <p>Victor Tsaconas</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-sm">
+        <h4 class="h5">Mikael Asselyn</h4>
+        <p>Coiffeur ﹒ Coloriste</p>
+        <p class="font-weight-light font-italic pr-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere sint quae voluptas repellat accusamus.
+        </p>
+      </div>
+      <div class="col-sm">
+        <h4 class="h5">Réseaux sociaux</h4>
+        <p class="mb-1 d-flex align-items-center">
+          <% link_to data.links.facebook, target: "_blank", class: "link-uncolored link-undecored" do %>
+            <%= image_tag "social-icons/facebook.svg", alt: "Mikael Asselyn on facebook", width: "16", class: "mr-2" %> Facebook
+          <% end %>
+        </p>
+        <p class="mb-1 d-flex align-items-center">
+          <% link_to data.links.instagram, target: "_blank", class: "link-uncolored link-undecored" do %>
+            <%= image_tag "social-icons/instagram.svg", alt: "Mikael Asselyn on instagram", width: "16", class: "mr-2" %> Instagram
+          <% end %>
+        </p>
+      </div>
+      <div class="col-sm">
+        <h4 class="h5">Contact</h4>
+        <p class="mb-1 d-flex align-items-center">
+          <%= image_tag "icons/house.svg", alt: "Mikael Asselyn address in paris", width: "16", class: "mr-2" %>
+          <%= data.contact.address %>
+        </p>
+        <p class="mb-1 d-flex align-items-center">
+          <%= image_tag "icons/phone.svg", alt: "Mikael Asselyn address in paris", width: "16", class: "mr-2" %>
+          <%= data.contact.phone %>
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="terms-of-use">
-          <p>Atelier Millimètre 2018</p>
-          <div class="dot"></div>
-          <p class="hidden-xs"><%= link_to "Mentions légales", "/mentions_legales.html" %></p>
-          <p class="visible-xs"><%= link_to "CGU", "/conditions_generales_d_utilisation.html" %></p>
+  </div>
+  <div class="legals">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-right p-3 text-small m-0">
+            <%= link_to "Mentions légales", "/mentions-legales", class: "link-uncolored" %>
+          </p>
         </div>
       </div>
     </div>

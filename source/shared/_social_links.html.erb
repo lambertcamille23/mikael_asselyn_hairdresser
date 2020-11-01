@@ -1,12 +1,12 @@
 <div class="right-links">
   <div class="social-link">
-    <a href="<%= data.links.facebook %>" target="_blank">
+    <% link_to data.links.facebook, target: "_blank" do %>
       <%= image_tag "social-icons/facebook.svg", alt: "Mikael Asselyn on facebook" %>
-    </a>
+    <% end %>
   </div>
   <div class="social-link">
-    <a href="<%= data.links.instagram %>" target="_blank">
+    <% link_to data.links.instagram, target: "_blank" do %>
       <%= image_tag "social-icons/instagram.svg", alt: "Mikael Asselyn on instagram" %>
-    </a>
+    <% end %>
   </div>
 </div>
