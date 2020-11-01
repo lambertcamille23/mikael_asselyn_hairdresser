@@ -27,11 +27,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
-    color: $black;
+  }
+
+  img {
+    width: inherit;
+    padding: 6px;
   }
 
   &:hover {
-    background: $black;
+    background: $dark-grey;
   }
 }
