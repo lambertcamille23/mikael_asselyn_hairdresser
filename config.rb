@@ -23,6 +23,7 @@ page '/*.txt', layout: false
 page "/coupes.html"
 page "/couleurs-et-soins.html"
 page "/contact.html"
+page "/mentions-legales.html"
 
 # Helpers
 # Methods defined in the helpers block are available in templates
