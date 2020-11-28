@@ -21,7 +21,8 @@ page '/*.txt', layout: false
 
 # routes
 page "/coupes.html"
-page "/couleurs-et-soins.html"
+page "/couleurs.html"
+page "/soins-detente.html"
 page "/contact.html"
 page "/mentions-legales.html"
 

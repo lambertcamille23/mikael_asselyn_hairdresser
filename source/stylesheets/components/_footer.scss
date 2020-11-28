@@ -1,12 +1,15 @@
 #fixed-footer {
-  min-height: calc(100vh - 70px - 292px)
+  min-height: calc(100vh - 70px - 315px)
 }
 
 #footer {
-  background: $grey;
+  box-shadow: 0 0px 8px 0px rgba(33, 38, 41, 0.1);
   padding-top: 32px;
+  margin-top: 32px;
 
   .legals {
-    background: $dark-grey;
+    // border-top: 1px $grey solid;
+    opacity: 0.7;
+    background: $grey;
   }
 }

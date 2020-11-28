@@ -18,7 +18,10 @@
             <%= link_to "Coupes", "/coupes.html" %>
           </li>
           <li class="<%= 'active' if current_page.data.page_id == :color %>">
-            <%= link_to "Couleurs & soins", "/couleurs-et-soins.html" %>
+            <%= link_to "Couleurs", "/couleurs.html" %>
+          </li>
+          <li class="<%= 'active' if current_page.data.page_id == :care %>">
+            <%= link_to "Soins & détente", "/soins-detente.html" %>
           </li>
           <li class="<%= 'active' if current_page.data.page_id == :contact %>">
             <%= link_to "Contact", "/contact.html" %>

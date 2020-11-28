@@ -2,35 +2,40 @@
   <div class="container">
     <div class="row">
       <div class="col-md mb-4">
-        <h4 class="h5">Mikael Asselyn</h4>
+        <h4 class="h5 mb-3">Mikael Asselyn</h4>
         <p>Coiffeur ﹒ Coloriste</p>
-        <p class="font-weight-light font-italic pr-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere sint quae voluptas repellat accusamus.
-        </p>
       </div>
       <div class="col-md mb-4">
-        <h4 class="h5">Réseaux sociaux</h4>
-        <p class="mb-1 d-flex align-items-center">
+        <h4 class="h5 mb-3">Réseaux sociaux</h4>
+        <p class="mb-2 d-flex align-items-center">
           <% link_to data.links.facebook, target: "_blank", class: "link-uncolored" do %>
             <%= image_tag "social-icons/facebook.svg", alt: "Mikael Asselyn on facebook", width: "16", class: "mr-2" %>Facebook
           <% end %>
         </p>
-        <p class="mb-1 d-flex align-items-center">
+        <p class="mb-2 d-flex align-items-center">
           <% link_to data.links.instagram, target: "_blank", class: "link-uncolored" do %>
             <%= image_tag "social-icons/instagram.svg", alt: "Mikael Asselyn on instagram", width: "16", class: "mr-2" %>Instagram
           <% end %>
         </p>
       </div>
       <div class="col-md mb-4">
-        <h4 class="h5">Contact</h4>
-        <p class="mb-1 d-flex align-items-center">
+        <h4 class="h5 mb-3">Contact</h4>
+        <p class="mb-2 d-flex align-items-center">
           <%= image_tag "icons/house.svg", alt: "Mikael Asselyn address in paris", width: "16", class: "mr-2" %>
           <%= data.contact.address %>
         </p>
-        <p class="mb-1 d-flex align-items-center">
-          <%= image_tag "icons/phone.svg", alt: "Mikael Asselyn address in paris", width: "16", class: "mr-2" %>
+        <p class="mb-2 d-flex align-items-center">
+          <%= image_tag "icons/phone.svg", alt: "Mikael Asselyn phone contact", width: "16", class: "mr-2" %>
           <%= link_to data.contact.phone, "tel:#{data.contact.phone}", class: "link-uncolored" %>
         </p>
+        <div class="mb-0 d-flex align-top">
+          <%= image_tag "icons/metro.svg", alt: "Mikael Asselyn near #{data.contact.subway_1}", width: "16", height: "16", class: "mr-2 mt-1" %>
+          <div>
+            <p class="m-0"><%= data.contact.subway_1 %></p>
+            <p class="m-0"><%= data.contact.subway_2 %></p>
+            <p class="m-0"><%= data.contact.subway_3 %></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
