@@ -28,12 +28,22 @@
           <%= image_tag "icons/phone.svg", alt: "Mikael Asselyn phone contact", width: "16", class: "mr-2" %>
           <%= link_to data.contact.phone, "tel:#{data.contact.phone}", class: "link-uncolored" %>
         </p>
-        <div class="mb-0 d-flex align-top">
+      </div>
+      <div class="col-md mb-4">
+        <h4 class="h5 mb-3">Transport</h4>
+        <div class="mb-3 d-flex align-top">
           <%= image_tag "icons/metro.svg", alt: "Mikael Asselyn near #{data.contact.subway_1}", width: "16", height: "16", class: "mr-2 mt-1" %>
           <div>
             <p class="m-0"><%= data.contact.subway_1 %></p>
             <p class="m-0"><%= data.contact.subway_2 %></p>
             <p class="m-0"><%= data.contact.subway_3 %></p>
+          </div>
+        </div>
+        <div class="mb-0 d-flex align-top">
+          <%= image_tag "icons/bus.svg", alt: "Mikael Asselyn near #{data.contact.subway_1}", width: "16", height: "16", class: "mr-2 mt-1" %>
+          <div>
+            <p class="m-0"><%= data.contact.bus_1 %></p>
+            <p class="m-0"><%= data.contact.bus_2 %></p>
           </div>
         </div>
       </div>

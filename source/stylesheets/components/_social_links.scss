@@ -13,7 +13,7 @@
 }
 
 .social-link {
-  background: $grey;
+  background: $light-blue;
   width: 32px;
   height: 32px;
   position: relative;
@@ -35,6 +35,6 @@
   }
 
   &:hover {
-    background: $dark-grey;
+    background: $blue;
   }
 }
