@@ -12,7 +12,7 @@ Error: Undefined variable: "$body-font".
 10: 
 11: body {
 12:   margin: 0;
-13:   background: $grey;
+13:   background: $light-blue;
 
 Backtrace:
 /Users/germainloret/code/lambertcamille23/mikael_asselyn_hairdresser/source/stylesheets/config/global.scss:8
@@ -141,4 +141,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-font\".\A         on line 8 of /Users/germainloret/code/lambertcamille23/mikael_asselyn_hairdresser/source/stylesheets/config/global.scss\A \A 3: $breakpoint-sm: 768px;\A 4: $breakpoint-md: 992px;\A 5: $breakpoint-lg: 1200px;\A 6: \A 7: * {\A 8:   font-family: $body-font;\A 9: }\A 10: \A 11: body {\A 12:   margin: 0;\A 13:   background: $grey;"; }
+  content: "Error: Undefined variable: \"$body-font\".\A         on line 8 of /Users/germainloret/code/lambertcamille23/mikael_asselyn_hairdresser/source/stylesheets/config/global.scss\A \A 3: $breakpoint-sm: 768px;\A 4: $breakpoint-md: 992px;\A 5: $breakpoint-lg: 1200px;\A 6: \A 7: * {\A 8:   font-family: $body-font;\A 9: }\A 10: \A 11: body {\A 12:   margin: 0;\A 13:   background: $light-blue;"; }
